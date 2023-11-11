@@ -49,7 +49,7 @@ def predict(bed,bath,loc,size,status,facing,Type):
     """Function to accept data"""
     selected_location=location_mapping[loc]
     selected_status=status_mapping[status]
-    selected_direction=ldirection_mapping[facing]
+    selected_direction=direction_mapping[facing]
     selected_property=property_type_mapping[Type]
     input_data=np.array([[bed,bath,selected_location,
                           size,selected_status,selected_direction,
