@@ -71,3 +71,6 @@ if __name__=="__main__":
  Type=col1.selectbox("Select Property Type",list(property_type_mapping.keys()))
  result=predict(bed,bath,loc,size,status,facing,Type)
  submit_button=st.button("submit")
+    if submit_button:
+        larger_text=f"<h2 style='color:blue:'>The Predicted  House Price is:{result} Lakhs</h2>"
+        st.markdown(larger_text,unsafe_allow_html=True)
