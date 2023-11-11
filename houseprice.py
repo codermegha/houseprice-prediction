@@ -61,7 +61,7 @@ if __name__=="__main__":
  col1,col2=st.columns([2,1])
  bed=col1.slider("No.of Bedrooms",max_value=10,min_value=1,
                 value=2)
- bed=col1.slider("No.of Bathrooms",max_value=10,min_value=1,
+ bath=col1.slider("No.of Bathrooms",max_value=10,min_value=1,
                 value=2)
  loc=col1.selectbox("Select a Location",list(location_mapping.keys()))
  size=col1.number_input("Area",max_value=10000,
