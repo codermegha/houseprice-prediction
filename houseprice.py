@@ -70,4 +70,4 @@ if __name__=="__main__":
  facing=col1.selectbox("Select the Facing",list(direction_mapping.keys()))
  Type=col1.selectbox("Select Property Type",list(property_type_mapping.keys()))
  result=predict(bed,bath,loc,size,status,facing,Type)
- submit_button=st.button("Submit")
+  submit_button=st.button("submit")
